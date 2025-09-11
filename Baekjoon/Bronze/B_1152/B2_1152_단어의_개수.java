@@ -5,12 +5,12 @@ import java.util.Scanner;
 public class B2_1152_단어의_개수 {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
-        String str = scan.nextLine();
+        String str = scan.nextLine().trim();
         
         if (str.isEmpty()) {
             System.out.println(0);
         } else {
-            String [] arr = str.trim().split("\\s+");
+            String [] arr = str.split("\\s+");
             System.out.println(arr.length);
         }
         scan.close();
