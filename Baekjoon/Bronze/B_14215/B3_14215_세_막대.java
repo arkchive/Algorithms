@@ -23,6 +23,7 @@ public class B3_14215_세_막대 {
         } else {
             System.out.println(sum);
         }
+        scan.close();
     }
     
 }
