@@ -1,7 +1,5 @@
 package Baekjoon.Silver.S_1463;
 
-import java.util.ArrayList;
-import java.util.List;
 import java.util.Scanner;
 
 public class S3_1463_1로_만들기 {
