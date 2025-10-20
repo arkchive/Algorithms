@@ -15,11 +15,11 @@ public class S3_15651_N과_M_3 {
         M = scan.nextInt();
          
         arr = new int[M];
-        backtrack(0);
+        dfs(0);
         System.out.println(strBuild.toString());
     }
 
-    static void backtrack(int depth) {
+    static void dfs(int depth) {
         if (depth == M) {
             for (int i : arr) {
                 strBuild.append(i).append(" ");
@@ -29,7 +29,7 @@ public class S3_15651_N과_M_3 {
         }
         for (int i = 1; i <= N; i++) {
             arr[depth] = i;
-            backtrack(depth + 1);
+            dfs(depth + 1);
         }
     }
     

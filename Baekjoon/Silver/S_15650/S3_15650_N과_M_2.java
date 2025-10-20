@@ -17,12 +17,12 @@ public class S3_15650_N과_M_2 {
 
         arr = new int[M];
 
-        backtrack(0, 1);
+        dfs(0, 1);
         System.out.println(strBuild.toString());
 
     }
 
-    static void backtrack(int depth, int start) {
+    static void dfs(int depth, int start) {
         if (depth == M) {
             for (int i : arr) {
                 strBuild.append(i).append(" ");
@@ -33,7 +33,7 @@ public class S3_15650_N과_M_2 {
         
         for (int i = start; i <= N; i++) {
             arr[depth] = i;
-            backtrack(depth + 1, i + 1);
+            dfs(depth + 1, i + 1);
         }
     }
 }
